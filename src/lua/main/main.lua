@@ -1,4 +1,4 @@
-function init()
+﻿function init()
     package.path = "..\\?.lua"
 end
 
@@ -16,6 +16,9 @@ require("main.after")
 after.ini_after()
 after.end_after()
 
+require("utils.time_utils")
+local t = timeUtil.formatTime(1000000, false)
+print(t)
 
 
 
